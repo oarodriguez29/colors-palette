@@ -1,0 +1,9 @@
+/* Comandos Basios para agregar y subir los cambios al Repo de Github  */
+
+git add README.md             ->  (Agrega el archivo a la bandeja para subirlo al repo)
+git commit -m "first commit"  ->  (Agrega el comentario del archivo)
+git remote add origin https://github.com/oarodriguez29/colors-palette.git -> (asigna el repo remoto del proyecto)
+git push -u origin master     ->  (Sube los cambios al repositorio, en la rama master)
+
+git status     ->  (Muestra el estatus de archivos antes de subir al Repo)
+git remote -v  ->  (Muestra el repositorio remoto asignado a dicho proyecto)
