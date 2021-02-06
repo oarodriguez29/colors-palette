@@ -9,6 +9,39 @@ git status     ->  (Muestra el estatus de archivos antes de subir al Repo)
 git remote -v  ->  (Muestra el repositorio remoto asignado a dicho proyecto)
 
 
+**** Extraer cambios de un repositorio remoto ****
+
+-> Forma 1:
+
+Usa git fetch para recuperar trabajo nuevo realizado por otras personas. Extraer desde un repositorio permite obtener todas las etiquetas y ramas de seguimiento remoto sin fusionar estos cambios en tus propias ramas.
+
+Si ya tienes un repositorio local con una URL remota configurada para el proyecto deseado, puedes obtener toda la información nueva usando git fetch *remotename* en la terminal:
+
+  git fetch remotename  -> (Extrae las actualizaciones realizadas en un repositorio remoto)
+
+Si no, siempre puedes agregar un nuevo remoto y luego extraer.
+
+
+-> Forma 2:
+
+git pull es un atajo conveniente para realizar tanto git fetch y git merge en el mismo comando:
+
+  git pull remotename branchname  ->  (Obtiene actualizaciones en línea y las fusiona con tu trabajo local)
+
+NOTA: Como pull realiza una fusión en los cambios recuperados, debes asegurarte de que tu trabajo local esté confirmado antes de ejecutar el comando pull.
+Si se produce un conflicto de fusión que no puedes resolver, o si decides abandonar la fusión, 
+puedes usar git merge --abort para hacer que la rama vuelva al estado anterior antes de que extrajeras.
+
+
+**** Fusionar cambios en tu rama local ****
+
+La fusión combina tus cambios locales con los cambios realizados por otros.
+
+Por lo general, fusionas una rama de seguimiento remoto (es decir, una rama extraída desde un repositorio remoto) con tu rama local:
+
+  git merge remotename/branchname  ->  (Fusiona actualizaciones realizadas en línea con tu trabajo local)
+
+
 /* Comandos para Trabajar con Ramas (Branch) */
 
 https://desarrolloweb.com/articulos/trabajar-ramas-git.html
