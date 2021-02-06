@@ -4,53 +4,165 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Paleta de Colores Personalizados</title>
-	<link rel="stylesheet" href="css/materialize.min.css">
+    	<!-- CSS -->
+     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
+<style>
+
+body{
+  background-color: teal;
+}
+.card{
+  position: relative;
+  border-bottom-left-radius: 10px 
+    !important;
+  border-bottom-right-radius: 10px 
+    !important;
+}
+p{
+  
+}
+.c{
+  margin: auto;
+  width: auto;
+  height: auto;
+/*   position: absolute; */
+  left: 600px;
+  top: 100px;
+  background-color: #fdfdfd;
+  opacity:0.4;
+  border: 1px solid #99cccc;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 2px black);
+}
+div.color1{
+  height: 200px;
+  border-bottom-left-radius: 10px 
+    !important;
+  border-bottom-right-radius: 10px 
+    !important;
+  margin-bottom:0px;
+  background-color:rgba(244,18,3,1);  /* Rojo */  
+}
+div.color2{
+  height: 100px;
+  margin-top:0px;
+  margin-bottom:0px;
+  background-color:rgba(250,250,250,1); /* Blanco */  
+}
+div.color3{
+  margin-top:0px;
+  margin-bottom:0px;
+  background-color:rgba(148,149,153,1);/* Gris */
+}
+div.color4{
+  border-bottom-left-radius: 10px 
+    !important;
+  border-bottom-right-radius: 10px 
+    !important;
+  margin-top:0px;
+  margin-bottom:0px;
+  background-color:rgba(0,0,0,1);/* Negro */
+  
+}
+
+
+</style>
 <body>
 
-<div class="container">
-
-	<div class="row indigo lighten-5 z-depth-4">
-		<!-- DIV COL S12 -->
-		<div class="col s12">	    	
-	      <h4 class="center">
-	      	<em>Clase 'card-panel' <b class="teal-text">Materialize CSS.</b></em>
-	      </h4>
-	      <hr class="indigo lighten-5 z-depth-1">
-	      <div class="col s12 m4">
-	      	<div class="card-panel hoverable z-depth-2">
-	      		<div class="col s4 m6 14">
-	      			<img class="responsive-img circle" alt="Foto de Perfil" src="../PracticasMaterialize/public/img/perfil.jpg">		      			
-	      		</div>
-	      		<span>
-	      			<h5>oarodriguez</h5>
-	      		</span>
-	      		<p>
-	      			<em>
-	      				<u class="truncate">Trabajando los Medias CSS de Materialize Para Perfiles de User's</u>
-	      			</em>
-	      		</p>
-	      	</div>
-	      </div>
-	      <div class="col s12 m6 19">
-		    	<div class="card-panel hoverable grey darken-1 z-depth-2">
-		      		<span class="white-text">
-		      			<h6>'card-panel' <em>Gris</em> con Materialize CSS.</h6>
-		      		</span>
-		      		<p class="truncate">Haciendo Uso de la Clase "truncate", para los Puntos Suspensivos.</p>
-		    	</div>
-	      </div>
-	      <div class="col s12 m6 19">
-		    	<div class="card-panel hoverable yellow darken-4 z-depth-2">
-		      		<span class="white-text">
-		      			<h6>'card-panel' <em>Amarillo</em> con Materialize CSS.</h6>
-		      		</span>
-		      		<p class="truncate">I am convenient because I require little markup to use effectively. I am similar to what i	called a panel in other frameworks.</p>
-		    	</div>
-	      </div>
-        </div><!-- FIN DIV COL S12 -->
+<!-- container -->
+<div class="container"> 
+  
+<!-- Modelo I -->
+<!-- row I -->
+<div class="row">
+  <div class="col s12 m4" id="plt">
+    <div class="card hoverable z-depth-1">
+      <div class="card-content color1 z-depth-1">
+        <div class="c" style="display:none;"><p class="center">Train-palette</p></div>
+      </div>
+      <div class="card-content color2 z-depth-5"></div>
+      <div class="card-content color3 z-depth-1"></div>
+      <div class="card-content color4 z-depth-1"></div>
     </div>
+  </div>
+  
+  <div class="col s12 m4" id="plt">
+    <div class="card hoverable z-depth-1">
+      <div class="card-content color1 z-depth-1">
+        <div class="c" style="display:none;"><p class="center">Train-Secondary-palette</p></div>
+      </div>
+      <div class="card-content color2 z-depth-5"></div>
+      <div class="card-content color3 z-depth-1"></div>
+      <div class="card-content color4 z-depth-1"></div>
+    </div>
+  </div>
+  
 </div>
-<script src="js/materialize.min.js"></script>
+<!-- end row I -->
+<!-- row II -->
+  <div class="row" >
+    <div class="col s12 m4"></div>
+    <div class="col s12 m4"></div>
+    <div class="col s12 m4"></div>
+  </div>
+<!-- end row II -->
+
+
+<!-- Modelo II -->
+
+<!-- <div class="row">
+    <div class="col s12 m6 hoverable">
+      <div class="card-panel color1"></div>
+      <div class="card-panel color2"></div>
+      <div class="card-panel color3"></div>
+      <div class="card-panel color4"></div>
+    </div>
+  </div> -->
+  
+ 
+<!-- Modelo III -->
+  
+<!--    <div class="row car">
+     <div class="col s6">
+      <div class="col s12 color1"></div>
+      <div class="col s12 color2"></div>
+      <div class="col s12 color3"><p></p></div>
+      <div class="col s12 color4"><p></p></div>
+     </div>
+  </div> -->
+  
+</div><!-- end container -->
+
+
+ <!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('#plt').mouseover(function(){
+    $('.c').animate({opacity: "0.5"})
+      .css('display','block');
+    $(".c p").animate({fontSize: "1.2em"});
+    //$('.c').show();
+  });
+
+  $('#plt').mouseleave(function(){
+    $('.c')
+      .css('display','none');
+    
+     //$('.c').hide();
+    
+  });
+
+  
+});
+
+</script>
 </body>
 </html>
