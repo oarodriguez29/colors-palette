@@ -45,3 +45,70 @@ Por lo general, fusionas una rama de seguimiento remoto (es decir, una rama extr
 /* Comandos para Trabajar con Ramas (Branch) */
 
 https://desarrolloweb.com/articulos/trabajar-ramas-git.html
+
+
+*** Ver Todas las Ramas ***
+
+   git branch   ->   (Muestra todas las Ramas existentes)
+
+
+*** Crear Una Nueva Rama ***
+
+   git branch NombreDeLaNuevaRama   ->   (Crea una nueva rama)
+
+
+*** Mostrar Todas las Ramas del Proyecto con sus Commits ***
+
+   git show-branch   ->   (Muestra todas las ramas con sus commits)
+
+
+*** Pasar de Una Rama a Otra ***
+
+   git checkout NombreDeLaRama   ->   (para moverse entre ramas)
+
+
+*** Crear nueva Rama y Moverse a Ella ***
+
+   git checkout -b otrarama   ->   (crea rama y se mueve hacia dicha rama creada)
+
+
+*** Fusionar Ramas ***
+
+   git merge NombreRama   ->   (Permite fusionar con la Rama "NombreRama", estando ubicados en la Rama 'master', sin 					comentario)
+
+
+   git merge NombreRama -m 'Esto es un merge con mensaje'   ->   (Permite fusionar con la Rama "NombreRama", estando ubicados 									  en la Rama 'master' con su comentario)
+
+
+
+*** Fusionar los cambios de master en la rama en desarrollo ***
+
+   git merge master -m 'Un mensaje del merge de master en el branch experimental'   ->   (Fusiona los cambios de master a 												  otraRama con su comentario)
+
+
+*** Subir una Rama al Repo Remoto ***
+
+   git push -u origin NombreRama   ->   (sube los cambios al repo a la rama especificada)
+
+
+
+*** Borrar Una Rama en Local ***
+
+   git branch -d rama_a_borrar   ->   (Elimina una rama que aun no se ha subido a github o repo)
+
+
+
+*** Eliminar una Rama en Remoto ***
+
+   git push origin --delete rama_a_borrar   ->   (Borra una rama que ya fue cargada al repo)
+
+
+
+
+
+
+
+
+
+
+
