@@ -74,16 +74,16 @@ https://desarrolloweb.com/articulos/trabajar-ramas-git.html
 
 *** Fusionar Ramas ***
 
-   git merge NombreRama   ->   (Permite fusionar con la Rama "NombreRama", estando ubicados en la Rama 'master', sin 					comentario)
+   git merge NombreRama   ->   (Permite fusionar con la Rama "NombreRama", estando ubicados en la Rama 'master', sin comentario)
 
 
-   git merge NombreRama -m 'Esto es un merge con mensaje'   ->   (Permite fusionar con la Rama "NombreRama", estando ubicados 									  en la Rama 'master' con su comentario)
+   git merge NombreRama -m 'Esto es un merge con mensaje'   ->   (Permite fusionar con la Rama "NombreRama", estando ubicados en la Rama 'master' con su comentario)
 
 
 
 *** Fusionar los cambios de master en la rama en desarrollo ***
 
-   git merge master -m 'Un mensaje del merge de master en el branch experimental'   ->   (Fusiona los cambios de master a 												  otraRama con su comentario)
+   git merge master -m 'Un mensaje del merge de master en el branch experimental'   ->   (Fusiona los cambios de master a otraRama con su comentario)
 
 
 *** Subir una Rama al Repo Remoto ***
